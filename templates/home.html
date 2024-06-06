@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Imran Nazir</title>
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1>Hi, I'm Imran.</h1>
+    <p>
+      It's like in this universe we process time linearly forward. But outside
+      of our space time from what would be a fourth dimensional perspective time
+      wouldn't exist.
+    </p>
+    <div>
+      <h2 class="text-center mt-2 mb-4">lmk if you're looking for a</h2>
+      <div>
+        {% for job in jobs %}
+          {% include 'jobitem.html' %}
+        {% endfor %}
+    </div>
+  </body>
+  <div>Anyway you should totally subscribe to my newsletter.</div>
+  <button type="button" class="btn btn-dark">Subscribe</button>
+</html>
